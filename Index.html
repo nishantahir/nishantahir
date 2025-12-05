@@ -1,0 +1,248 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Nishant Ahir — Biomedical Engineer | R&D | Application Engineer" />
+    <title>Nishant Ahir — Biomedical Engineer</title>
+    <!-- Tailwind CDN (for quick prototyping); switch to a build pipeline for production -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* subtle glassy card and accent color */
+        :root {
+            --accent: #0ea5a4
+        }
+
+        .glass {
+            background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(6px);
+        }
+
+        .fancy-border {
+            border-image: linear-gradient(90deg, rgba(14,165,164,1), rgba(79,70,229,1)) 1
+        }
+    </style>
+</head>
+<body class="bg-[#081124] text-slate-200 leading-relaxed antialiased">
+    <header class="max-w-5xl mx-auto p-6 flex items-center justify-between">
+        <a href="#hero" class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-br from-teal-400 to-violet-600 flex items-center justify-center font-bold text-white">NA</div>
+            <div>
+                <h1 class="text-lg font-semibold">Nishant Ahir</h1>
+                <p class="text-xs text-slate-400">Biomedical Engineer · R&D · Application Engineering</p>
+            </div>
+        </a>
+        <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+            <a href="#about" class="hover:text-white">About</a>
+            <a href="#projects" class="hover:text-white">Projects</a>
+            <a href="#experience" class="hover:text-white">Experience</a>
+            <a href="#skills" class="hover:text-white">Skills</a>
+            <a href="#contact" class="hover:text-white">Contact</a>
+            <a href="resume.pdf" class="px-3 py-1 border rounded-md text-sm hover:bg-white/5">Resume</a>
+        </nav>
+        <div class="md:hidden">
+            <button id="menuBtn" class="p-2 rounded-md glass">☰</button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden p-4 max-w-5xl mx-auto text-slate-300">
+        <a href="#about" class="block py-1">About</a>
+        <a href="#projects" class="block py-1">Projects</a>
+        <a href="#experience" class="block py-1">Experience</a>
+        <a href="#skills" class="block py-1">Skills</a>
+        <a href="#contact" class="block py-1">Contact</a>
+    </div>
+
+    <main class="max-w-5xl mx-auto px-6">
+        <!-- Hero -->
+        <section id="hero" class="grid md:grid-cols-2 gap-8 items-center py-12">
+            <div>
+                <p class="text-sm text-slate-400">Hello, I'm</p>
+                <h2 class="text-4xl font-extrabold text-white mb-2">Nishant Ahir</h2>
+                <p class="text-lg text-slate-300 max-w-xl">Biomedical Engineer focused on medical device R&D, clinical application engineering, and product development. I design reliable systems, validate hardware, and translate clinical needs into robust engineering solutions.</p>
+
+                <div class="mt-6 flex gap-3">
+                    <a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-teal-400 to-violet-600 text-black font-semibold" href="#contact">Hire me</a>
+                    <a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-700" href="resume.pdf" target="_blank">Download Resume</a>
+                </div>
+
+                <div class="mt-6 flex gap-3 items-center text-slate-400 text-sm">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 1.567 3 3.5S13.657 15 12 15s-3-1.567-3-3.5S10.343 8 12 8z" /></svg>
+                        <span>Ahmedabad, Gujarat, India</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2M7 8H5a2 2 0 00-2 2v6a2 2 0 002 2h2" /></svg>
+                        <span>Available to relocate / travel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <!-- Replace profile.jpg with your image -->
+                <div class="w-56 h-56 rounded-2xl overflow-hidden fancy-border border-2 p-1">
+                    <img id="profilePic" src="profile.jpg" alt="Nishant Ahir" class="w-full h-full object-cover rounded-lg" />
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-10">
+            <div class="glass p-6 rounded-2xl fancy-border border-2">
+                <h3 class="text-2xl font-semibold mb-3">About me</h3>
+                <p class="text-slate-300">I graduated with a Bachelor's in Biomedical Engineering (2023). My strengths include medical device prototyping, clinical applications, 3D printing/bioprinting concepts, embedded systems for medical devices, and ROS for robotic control. I enjoy building end-to-end solutions that connect clinical needs to product-ready hardware and software.</p>
+
+                <div class="mt-4 grid md:grid-cols-3 gap-3">
+                    <div class="p-4 bg-white/3 rounded-lg">
+                        <h4 class="font-semibold">Strong points</h4>
+                        <ul class="text-sm mt-2 text-slate-300">
+                            <li>Hands-on prototyping & calibration</li>
+                            <li>ROS, Python, MATLAB</li>
+                            <li>Clinical application & training</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-white/3 rounded-lg">
+                        <h4 class="font-semibold">Looking for</h4>
+                        <p class="text-sm mt-2 text-slate-300">R&D Engineer · Application Engineer · Medical Device Development roles</p>
+                    </div>
+                    <div class="p-4 bg-white/3 rounded-lg">
+                        <h4 class="font-semibold">Education</h4>
+                        <p class="text-sm mt-2 text-slate-300">B.Tech — Biomedical Engineering, Gujarat Technological University (2023)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="py-10">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-semibold">Selected Projects</h3>
+                <p class="text-sm text-slate-400">(Tap a project to view details)</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4">
+                <!-- Example project card: replace with your projects -->
+                <article class="p-4 rounded-xl glass hover:scale-102 transition-transform">
+                    <h4 class="font-semibold">Robotic 3D Bioprinter Arm (Prototype)</h4>
+                    <p class="text-sm text-slate-300 mt-2">Designed motion-control using ROS with custom motion commands and integrated real-time wound scanning for adaptive printing.</p>
+                    <div class="mt-3 text-xs text-slate-400">Tech: ROS · Python · 3D printing · Embedded</div>
+                    <a href="#" class="mt-3 inline-block text-sm text-teal-300">View code / demo →</a>
+                </article>
+
+                <article class="p-4 rounded-xl glass">
+                    <h4 class="font-semibold">Medical Device Calibration Dashboard</h4>
+                    <p class="text-sm text-slate-300 mt-2">Built a calibration workflow and UI for device parameter tuning and reporting in clinical environments.</p>
+                    <div class="mt-3 text-xs text-slate-400">Tech: React · Node · SQLite</div>
+                    <a href="#" class="mt-3 inline-block text-sm text-teal-300">View repo →</a>
+                </article>
+
+                <article class="p-4 rounded-xl glass">
+                    <h4 class="font-semibold">Gait Analysis Wearable Study</h4>
+                    <p class="text-sm text-slate-300 mt-2">Collected sensor data for gait patterns and implemented signal processing pipelines for feature extraction.</p>
+                    <div class="mt-3 text-xs text-slate-400">Tech: Embedded C · Python · DSP</div>
+                    <a href="#" class="mt-3 inline-block text-sm text-teal-300">Read paper →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="py-10">
+            <h3 class="text-2xl font-semibold mb-4">Experience</h3>
+            <div class="space-y-4">
+                <!-- Replace with your actual internships/jobs -->
+                <div class="p-4 glass rounded-lg">
+                    <div class="flex justify-between">
+                        <div>
+                            <h4 class="font-semibold">Clinical Application Intern — BPL Medical Technologies</h4>
+                            <p class="text-sm text-slate-400">May 2025 — Nov 2025</p>
+                        </div>
+                        <div class="text-sm text-slate-300">Ahmedabad / Bangalore</div>
+                    </div>
+                    <p class="text-slate-300 mt-2">Worked on device installation, troubleshooting, customer training, and narrowing down fault-diagnosis SOPs for clinical teams.</p>
+                </div>
+
+                <div class="p-4 glass rounded-lg">
+                    <div class="flex justify-between">
+                        <div>
+                            <h4 class="font-semibold">Service Intern — XYZ Hospital</h4>
+                            <p class="text-sm text-slate-400">Jan 2024 — Apr 2024</p>
+                        </div>
+                        <div class="text-sm text-slate-300">Vadodara</div>
+                    </div>
+                    <p class="text-slate-300 mt-2">Assisted biomedical engineers in preventive maintenance, device sterilization checks and routine calibration of monitoring systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="py-10">
+            <h3 class="text-2xl font-semibold mb-4">Skills & Tools</h3>
+            <div class="flex flex-wrap gap-2">
+                <!-- Tag list: edit to match your skills -->
+                <span class="px-3 py-1 rounded-full bg-white/6 text-sm">ROS / ROS2</span>
+                <span class="px-3 py-1 rounded-full bg-white/6 text-sm">Python</span>
+                <span class="px-3 py-1 rounded-full bg-white/6 text-sm">MATLAB</span>
+                <span class="px-3 py-1 rounded-full bg-white/6 text-sm">Embedded C</span>
+                <span class="px-3 py-1 rounded-full bg-white/6 text-sm">3D Printing & Bioprinting</span>
+                <span class="px-3 py-1 rounded-full bg-white/6 text-sm">Medical Device QA</span>
+                <span class="px-3 py-1 rounded-full bg-white/6 text-sm">Clinical Applications</span>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-10">
+            <div class="glass p-6 rounded-2xl">
+                <h3 class="text-2xl font-semibold">Contact</h3>
+                <p class="text-slate-300">I'm open to full-time roles and internships. Let's connect.</p>
+
+                <form id="contactForm" class="mt-4 grid md:grid-cols-2 gap-4">
+                    <input id="name" type="text" placeholder="Your name" class="p-3 rounded-md bg-white/5 border border-white/6" required />
+                    <input id="email" type="email" placeholder="Your email" class="p-3 rounded-md bg-white/5 border border-white/6" required />
+                    <input id="subject" type="text" placeholder="Subject" class="p-3 rounded-md bg-white/5 border border-white/6" required />
+                    <textarea id="message" placeholder="Message" class="p-3 rounded-md bg-white/5 border border-white/6 md:col-span-2" rows="4" required></textarea>
+                    <button type="submit" class="md:col-span-2 px-4 py-2 rounded-lg bg-gradient-to-r from-teal-400 to-violet-600 text-black font-semibold">Send Message</button>
+                </form>
+
+                <div class="mt-4 text-sm text-slate-400">
+                    <div>LinkedIn: <a id="lnkLinkedIn" href="https://www.linkedin.com/in/nishant-ahir-0802b0224/" target="_blank" class="text-teal-300">View profile</a></div>
+                    <div>GitHub: <a id="lnkGit" href="#" target="_blank" class="text-teal-300">—</a></div>
+                    <div>Email: <a href="mailto:your.email@example.com" class="text-teal-300">your.email@example.com</a></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-8 text-center text-slate-500 text-sm">
+            © <span id="curYear"></span> Nishant Ahir · Built for job applications & interviews — downloadable resume, projects, and contact.
+        </footer>
+    </main>
+
+    <script>
+        // small JS for interactions
+        document.getElementById('curYear').textContent = new Date().getFullYear();
+
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn?.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+
+        // contact form -> mailto fallback. In production, integrate Formspree or Netlify forms.
+        const contactForm = document.getElementById('contactForm');
+        contactForm?.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+        window.location.href = `mailto:your.email@example.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+        });
+
+        // sample dynamic replacement: if profile.jpg not provided, show initials with colored background
+        const img = document.getElementById('profilePic');
+        img.onerror = function(){
+        const wrapper = img.parentElement;
+        wrapper.innerHTML = `<div class=\"w-full h-full flex items-center justify-center bg-gradient-to-br from-teal-400 to-violet-600 text-3xl font-bold text-white\">NA</div>`;
+        }
+    </script>
+</body>
+</html>
